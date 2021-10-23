@@ -7,7 +7,8 @@ root = tk.Tk()
 s = 0
 
 root.title("Sentence Checker")
-canvas = tk.Canvas(root, width=900, height=300)
+root.config(bg="#252833")
+canvas = tk.Canvas(root, width=900, height=300, bg="#252833", highlightthickness=0)
 canvas.grid(columnspan=3, rowspan=3)
 
 # Logo
@@ -59,11 +60,11 @@ text_clear.set("Clear")
 clear_btn.grid(column=1, row=4)
 
 # Space for better formatting
-canvas = tk.Canvas(root, width=900, height=100)
+canvas = tk.Canvas(root, width=900, height=100, bg="#252833", highlightbackground="#5796d9")
 canvas.grid(columnspan=3)
 
 # Text box
-text_box = tk.Text(root, height=15, width=100, padx=15, pady=15)
+text_box = tk.Text(root, height=15, width=100, padx=15, pady=15, bg="#b6b9ba")
 text_box.grid(column=1, row=3)
 
 # numbers at the bottom
