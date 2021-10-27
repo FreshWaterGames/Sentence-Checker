@@ -43,7 +43,6 @@ def count_text():
 # Clear text field
 def clear_text():
     text_box.delete('1.0', END)
-    stats = tk.Label(root, text="Sentences: 0  Words: 0  Characters: 0 ", font="Raleway")
     stats.grid(columnspan=3, column=1, row=5)
 
 
